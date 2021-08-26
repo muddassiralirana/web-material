@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ADD</title>
+  <link rel="stylesheet" href="../assets/nav-tabs/add-dishes.css">
+  <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="row">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light br-r bg-light" aria-label="Main navigation">
+          <div class="container-fluid">
+            <a class="navbar-brand" style="color: #c70c5b; font-size: xx-large;" href="index.html">#FOod's</a>
+            <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              </ul>
+              <!-- <form class="d-flex"> -->
+              <span style="color:#c70c5b; font-size: large; margin-top: 6px;">&nbsp;|&nbsp;</span>
+              <a href="../index.html"><button class="btn mx-2" style="color:#c70c5b; font-size: large;"
+                  type="submit">Home</button></a>
+              <span style="color:#c70c5b; font-size: large;margin-top: 6px;">&nbsp;|&nbsp;</span>
+              <a href="../signUp.html"><button class="btn mx-2" style="color:#c70c5b; font-size: large;"
+                  type="submit">Restaurant Sign In</button></a>
+              <span style="color:#c70c5b; font-size: large;margin-top: 6px;">&nbsp;|&nbsp;</span>
+              <a href="../userSignUp.html"><button class="btn mx-2" style="color:#c70c5b; font-size: large;"
+                  onclick="goSignIn()" type="submit">User Sign In</button></a>
+              <!-- </form> -->
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <section>
+    <div class="contanier">
+      <div class="row">
+        <div class="col-md-8 offset-3">
+          <ul class="nav my-5 nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../Resdashboard.html">Pending</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="my-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="mb-3">
+            <label for="formGroupExampleInput" class="form-label">Tittle</label>
+            <input type="text" class="form-control" id="Tittle" placeholder="Tittle">
+          </div>
+          <div class="mb-3">
+            <label for="formGroupExampleInput2" class="form-label">Price</label>
+            <input type="text" class="form-control" id="Price" placeholder="Price">
+          </div>
+          <div class="mb-3">
+            <label for="formGroupExampleInput" class="form-label">Delivery</label>
+            <input type="text" class="form-control" id="Delivery" placeholder="free-delivery">
+          </div>
+          <div class="mb-3">
+            <label for="formGroupExampleInput" class="form-label">Image</label>
+            <input type="file" class="form-control" id="Image" placeholder="free-delivery">
+          </div>
+          <button class="btn btn-success" onclick="addDish()">Add Dish</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="../assets/nav-tabs/add-dishes.js"></script>
+  <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+      apiKey: "AIzaSyCJGcSuc3L-jbKyJ2sa32_2-oR2_A6as2Y",
+      authDomain: "hackaton-project-eef78.firebaseapp.com",
+      projectId: "hackaton-project-eef78",
+      storageBucket: "hackaton-project-eef78.appspot.com",
+      messagingSenderId: "190279278330",
+      appId: "1:190279278330:web:295f7fa82b07cadd377343",
+      measurementId: "G-6Q6KPWEVB2"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    // firebase.analytics();
+    const auth = firebase.auth();
+    const db = firebase.firestore();
+  </script>
+</body>
+
+</html>

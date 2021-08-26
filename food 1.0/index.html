@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LANDING PAGE</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+  <!-- <link rel="preconnect" href="./assets/fontawesome/all.css"> -->
+  <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/> -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+      apiKey: "AIzaSyCJGcSuc3L-jbKyJ2sa32_2-oR2_A6as2Y",
+      authDomain: "hackaton-project-eef78.firebaseapp.com",
+      projectId: "hackaton-project-eef78",
+      storageBucket: "hackaton-project-eef78.appspot.com",
+      messagingSenderId: "190279278330",
+      appId: "1:190279278330:web:295f7fa82b07cadd377343",
+      measurementId: "G-6Q6KPWEVB2"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+</head>
+
+<body class="bg-light">
+  <header>
+    <div class="container">
+      <div class="row">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light br-r bg-light" aria-label="Main navigation">
+          <div class="container-fluid">
+            <a class="navbar-brand" style="color: #c70c5b; font-size: xx-large;" href="#">#FOod's</a>
+            <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              </ul>
+              <!-- <form class="d-flex" id="Location_Form"> -->
+              <span style="color:#c70c5b; font-size: large; margin-top: 6px;">&nbsp;|&nbsp;</span>
+              <a href="./login.html"><button class="btn mx-2" style="color:#c70c5b; font-size: large;" type="submit">Log
+                  In</button></a>
+              <span style="color:#c70c5b; font-size: large;margin-top: 6px;">&nbsp;|&nbsp;</span>
+              <a href="./signUp.html"><button class="btn mx-2" style="color:#c70c5b; font-size: large;"
+                  type="submit">Restaurant Sign In</button></a>
+              <span style="color:#c70c5b; font-size: large;margin-top: 6px;">&nbsp;|&nbsp;</span>
+              <a href="./userSignUp.html"><button class="btn mx-2" style="color:#c70c5b; font-size: large;"
+                  type="submit">User Sign In</button></a>
+              <!-- </form> -->
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <section>
+    <div class="container-fluid">
+      <img src="https://images.deliveryhero.io/image/foodpanda/home-vendor-pk.jpg?width=600&height=384" width="100%"
+        alt="">
+    </div>
+  </section>
+  <section>
+    <h1 class="display-4 d-flex fw-5 justify-content-center mt-5" style="color: #c70c5b;">Find Your Delight Food</h1>
+    <div class="container">
+      <div class="row">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <a href="./tabs/add-Dishes.html" style="color: #c70c5b;" class="text-decoration-none">
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="https://besthqwallpapers.com/Uploads/18-3-2020/125076/thumb2-pizza-fast-food-pizza-with-sausage-and-olives-delicious-food.jpg"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title d-flex justify-content-center">DeSsi Khaby</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="./tabs/add-Dishes.html" style="color: #c70c5b;" class="text-decoration-none">
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="https://besthqwallpapers.com/Uploads/18-3-2020/125076/thumb2-pizza-fast-food-pizza-with-sausage-and-olives-delicious-food.jpg"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title d-flex justify-content-center">Chinese</h5>
+                  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="./tabs/add-Dishes.html" style="color: #c70c5b;" class="text-decoration-none">
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="https://besthqwallpapers.com/Uploads/18-3-2020/125076/thumb2-pizza-fast-food-pizza-with-sausage-and-olives-delicious-food.jpg"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title d-flex justify-content-center">Continential</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                    additional content. This card has even longer content than the first to show that equal height
+                    action.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section style="background-color: #fff;">
+    <h1 class="display-4 d-flex fw-5 justify-content-center mt-5" style="color: #c70c5b;">#About</h1>
+    <div class="container">
+      <div class="row">
+        <h2 class="display-6 fw-5 text-dark">Order food online from the best restaurants and shops on <span
+            style="color: #c70c5b;">#FOod</span></h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque officiis totam quia, perspiciatis molestiae
+          praesentium omnis, ut natus iusto dolores id laborum explicabo! Nihil quidem repellat laboriosam natus
+          sapiente quibusdam.</p>
+        <h2 class="d-flex justify-content-center">Frequently Asked Question?</h2>
+        <div class="row">
+          <h4 class="mt-3">How Can I get Order in Pakistan?</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit atque sit placeat facilis impedit
+            incidunt. Sed illo veritatis repudiandae.</p>
+          <h4 class="mt-3">Does #FOod deliver 24 hours?</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit atque sit placeat facilis impedit
+            incidunt. Sed illo veritatis repudiandae.</p>
+          <h4 class="mt-3">Can I order #FOod for someone else?</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit atque sit placeat facilis impedit
+            incidunt. Sed illo veritatis repudiandae.</p>
+          <h4 class="mt-3">How much does #FOod charge for delivery?</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit atque sit placeat facilis impedit
+            incidunt. Sed illo veritatis repudiandae.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <h4 class="display-4 d-flex my-5 justify-content-center fw-5" style="color: #c70c5b;">#Contact</h4>
+        <div class="cont">
+          <ul class="contact">
+            <li style="text-align: left;">
+              <p><i class="fa fa-map-marker fa-3x"></i></p>
+              <p><strong>Lorem Ipsum Ltd.</strong></br>Random str. 8, Pellenstique</p>
+            </li>
+            <li style="text-align: left;">
+              <p><i class="fa fa-phone fa-3x"></i></p>
+              <p><strong>Phone</strong></br>00 55 (20) 3334 4444</p>
+            </li>
+            <li style="text-align: left;">
+              <p><i class="fa fa-envelope fa-3x"></i></p>
+              <p><strong>Email</strong></br>office@loremipsum.com</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <footer class="container-fluid">
+    <p class="d-flex text-light justify-content-center my-2 bg-dark">&copy;Copy Right</p>
+  </footer>
+
+  <script src="./assets/js/app.js"></script>
+  <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
