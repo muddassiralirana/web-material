@@ -1,0 +1,9 @@
+table{
+    display: flex;
+    justify-content: center;
+}
+td:hover{
+    transform: scale(1.1);
+    z-index: 1;
+    cursor: pointer;
+}

@@ -1,0 +1,25 @@
+/* .col{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+   
+}
+.col img{
+    border-radius: 15px;
+}
+.col:hover{
+    cursor: pointer;
+    transform:scale(1.1);
+    z-index: 1;
+    
+} */
+table{
+    display: flex;
+    justify-content: center;
+   
+}
+tr:hover{
+    transform: scale(1.1);
+    z-index: 1;
+    cursor: pointer;
+}
